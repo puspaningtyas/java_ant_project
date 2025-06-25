@@ -10,5 +10,5 @@ package com.person;
  * @author puspa
  */
 public class Person {
-    
+    private String name; 
 }
