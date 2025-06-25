@@ -10,7 +10,7 @@ package com.person;
  * @author puspa
  */
 public class Student extends Person{
-    private String id;
+    private String studentId;
 
     public Student() {
     }
@@ -19,16 +19,17 @@ public class Student extends Person{
         super(name);
     }
     
-    public Student(String name,String id) {
+    public Student(String name,String studentId) {
         super(name);
-        this.id = id;
+        this.studentId = studentId;
     }
 
-    public String getId() {
-        return id;
+    public String getStudentId() {
+        return studentId;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setStudentId(String studentId) {
+        this.studentId = studentId;
     }
+
 }
