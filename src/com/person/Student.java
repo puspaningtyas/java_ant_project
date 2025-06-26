@@ -8,27 +8,34 @@ package com.person;
 /**
  *
  * @author puspa
+ * update pass token git
  */
 public class Student extends Person{
-    private String id;
+    private String studentId;
 
     public Student() {
     }
 
-    public Student(String name) {
-        super(name);
-    }
-    
-    public Student(String name,String id) {
-        super(name);
-        this.id = id;
+    public Student(String studentId) {
+        this.studentId = studentId;
     }
 
-    public String getId() {
-        return id;
+    public Student(String studentId, String name) {
+        super(name);
+        this.studentId = studentId;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public Student(String studentId, String name, String socialNumber) {
+        super(name, socialNumber);
+        this.studentId = studentId;
+    } 
+
+    public String getStudentId() {
+        return studentId;
     }
+
+    public void setStudentId(String studentId) {
+        this.studentId = studentId;
+    }
+
 }

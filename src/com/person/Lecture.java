@@ -20,6 +20,11 @@ public class Lecture extends Person{
         this.lectureId = lectureId;
     }
 
+    public Lecture(String lectureId, String name, String socialNumber) {
+        super(name, socialNumber);
+        this.lectureId = lectureId;
+    }
+
     public String getLectureId() {
         return lectureId;
     }
