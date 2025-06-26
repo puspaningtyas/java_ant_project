@@ -28,6 +28,14 @@ public class Student extends Person{
     public Student(String studentId, String name, String socialNumber) {
         super(name, socialNumber);
         this.studentId = studentId;
+    } 
+
+    public String getStudentId() {
+        return studentId;
+    }
+
+    public void setStudentId(String studentId) {
+        this.studentId = studentId;
     }
 
  
