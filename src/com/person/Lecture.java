@@ -8,22 +8,32 @@ package com.person;
  *
  * @author user
  */
-public class Lecture extends Person{
+public class Lecture extends Staff{
     private String lectureId;
+
+    public Lecture() {
+    }
 
     public Lecture(String lectureId) {
         this.lectureId = lectureId;
     }
 
-    public Lecture(String lectureId, String name) {
-        super(name);
+    public Lecture(String lectureId, String staffId) {
+        super(staffId);
         this.lectureId = lectureId;
     }
 
-    public Lecture(String lectureId, String name, String socialNumber) {
-        super(name, socialNumber);
+    public Lecture(String lectureId, String staffId, String name) {
+        super(staffId, name);
         this.lectureId = lectureId;
     }
+
+    public Lecture(String lectureId, String staffId, String name, String socialNumber) {
+        super(staffId, name, socialNumber);
+        this.lectureId = lectureId;
+    }
+
+
 
     public String getLectureId() {
         return lectureId;
